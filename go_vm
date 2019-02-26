@@ -1,0 +1,11 @@
+curl https://apt.puppetlabs.com/DEB-GPG-KEY-puppet |sudo apt-key add
+sudo apt-get update
+sudo apt-get install -y puppetlabs-release-pcl
+sudo apt-get install -y puppet-agent
+sudo /opt/puppetlabs/bin/puppet --version
+
+#sudo cp etc_sudoers.txt /etc/sudoers
+#
+#ll /tmp
+#sudo puppet apply /vagrant/examples/file_hello.pp
+#ll /tmp
